@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Universal selectors*/
+        /* *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        } */
+        
+        /*Type selectors*/
+        /* p{
+            font-size: 16px;
+            margin:10px 20px 10px 20px;
+        } */
+
+        /* class selectors */
+        /* .highlight{
+            background-color: #21a2c9;
+        } */
+        
+         /* id selectors */
+        /* #header{
+            background-color: #333;
+        } */
+
+        /* attribute selectors */
+        /* input[type="text"]{
+            border: 10px solid green;
+        } */
+        
+        /* descendant selectors */
+        /* article p{
+            font-style: italic;
+            background-color: #1a1a1a;
+            color:white;
+            padding: 10px;
+        } */
+
+        /* child selectors */
+        div>p{
+            background-color: orange;
+        }
+    </style>
+
+</head>
+<body>
+    <header id="header">This is header</header>
+    <h1>main heading</h1>
+    <p>
+        This is paragrapgh adjacent to h1 and 
+        the adjacent siblings selector
+    </p>
+    <p>This is the regular paragraph showing the type selector</p>
+    <p class="highligth">
+        This paragraph has a highlight class,demonstrating 
+        the class selector.
+    </p>
+    <input type="text" placeholder="Enter text here"/>
+    <article>
+        <p>
+            This is a decendant paragrapgh
+        </p>
+    </article>
+    <div>
+        <p>I am a child</p>
+        <p>I am a child</p>
+            <section>
+                <p>I am a Desendent</p>
+            </section>
+            <p>I am a child</p>
+    </div>
+</body>
+</html>
